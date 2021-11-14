@@ -1,0 +1,10 @@
+FirstName;Age;Sex;
+Alex;18;Man
+Ivan;14;Man
+Petr;20;Man
+Olga;24;Women
+Irina;24;Women
+Anna;10;Women
+Mike;19;Man
+John;39;Man
+exaple:Alex;13;Male
