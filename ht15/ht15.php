@@ -61,3 +61,28 @@ foreach ($allman as $v){
 }
 //var_dump($sum);
 echo 'Hello Akex, general salary of all man: '.$sum. "\n";
+
+class Student extends User{
+    private $grant;
+    private $course;
+
+    public function setGrant($v_grant){
+        $this->grant = $v_grant;
+    }
+
+    public function getCourse(){
+        return $this->course;
+    }
+}
+class Driver extends Worker {
+    private $driver_experience;
+    private $category;
+
+    public function setDriver_experience($v_Dr_ex){
+        $this->driver_experience = $v_Dr_ex;
+    }
+
+    public function getCategory(){
+        return $this->category;
+    }
+}
