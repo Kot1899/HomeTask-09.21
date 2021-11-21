@@ -16,8 +16,48 @@ salary (зарплата), а также методы public getSalary и setSal
 class User{
     protected $name;
     protected $age;
-    public function setName;
-    public function getName;
-    public function setAge;
-    public function getAge;
+
+    public function setName($v_name){
+        $this->name = $v_name;
+    }
+
+    public function getName(){
+        return $this->name;
+    }
+
+    public function setAge($v_age){
+        $this->age = $v_age;
+    }
+
+    public function getAge(){
+        return $this->age;
+    }
 }
+
+class Worker extends User{
+    private $salary;
+
+    public function setSalary($v_salary){
+        $this->salary = $v_salary;
+    }
+
+    public function getSalary(){
+        return $this->salary;
+    }
+}
+
+$ivan= new Worker();
+$ivan->setName('Ivan');
+$ivan->setSalary(1000);
+
+$vasya= new Worker();
+$vasya->setName('Vasya');
+$vasya->setSalary(2000);
+
+$allman=[$ivan,$vasya];
+$sum=0;
+foreach ($allman as $v){
+    $sum+=$v->getSalary();
+}
+//var_dump($sum);
+echo 'Hello Akex, general salary of all man: '.$sum. "\n";
