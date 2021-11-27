@@ -20,39 +20,40 @@
 
 Выведи количество созданных пользователей, созданных через класс Builder
  */
-
-class Builder {
+class User{
     public $name;
     public $age;
-    public static $data=[];
+    public $city;
+}
 
-    public static function AddtoData($name, $age)
+class Builder {
+    public static $counter=0;
+
+    public static function AddtoPeople($name, $age, $city)
     {
-        Builder::$data[] = $name, $age;
+       $a= new User($name, $age, $city);
+       $a->name=$name;
+       $a->age=$age;
+       $a->city=$city;
+
+        builder::$counter++;
+
+       return $a;
+
     }
-    public static function getData(){
-    return Builder::$data;
-    }
+public static function getCounter(){
+       return builder::$counter;
 }
+  }
+  $user1=Builder::AddtoPeople('Vitali', '27','KH');
+$user2=Builder::AddtoPeople('Alex', '10','KH');
+$user3=Builder::AddtoPeople('Vlada', '9','KH');
 
-class User{
-    protected $name;
-    protected $age;
+//echo '<pre>';
+//var_dump($user1, $user2, $user3);
+echo 'number of users: ' . builder::$counter . "\n";
+echo 'number of users (function CIUNT): ' . count(builder::getCounter()) . "\n";
 
-    public function setName($v_name){
-        $this->name = $v_name;
-    }
 
-    public function getName(){
-        return $this->name;
-    }
 
-    public function setAge($v_age){
-        $this->age = $v_age;
-    }
-
-    public function getAge(){
-        return $this->age;
-    }
-}
 
