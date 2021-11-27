@@ -20,3 +20,39 @@
 
 Выведи количество созданных пользователей, созданных через класс Builder
  */
+
+class Builder {
+    public $name;
+    public $age;
+    public static $data=[];
+
+    public static function AddtoData($name, $age)
+    {
+        Builder::$data[] = $name, $age;
+    }
+    public static function getData(){
+    return Builder::$data;
+    }
+}
+
+class User{
+    protected $name;
+    protected $age;
+
+    public function setName($v_name){
+        $this->name = $v_name;
+    }
+
+    public function getName(){
+        return $this->name;
+    }
+
+    public function setAge($v_age){
+        $this->age = $v_age;
+    }
+
+    public function getAge(){
+        return $this->age;
+    }
+}
+
