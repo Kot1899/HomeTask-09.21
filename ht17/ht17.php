@@ -11,10 +11,24 @@
 class User{
     protected $name;
     protected $age;
+    public $car = 'maybe';
 
-    public function __construct($name)
+    public function __construct($name, $age, $car)
     {
         $this->setName($name);
+        $this->setAge($age);
+        $this->car;
+    }
+
+    public function __destruct(){
+        echo '==destuct'."\n";
+    }
+
+    public function __toString(){
+        // 3 options of magic method __toString:
+//       return $this->name;
+       return $this->getName();
+//       return '__toString';
     }
 
     public function setName($v_name){
@@ -98,7 +112,18 @@ $user1-> setName('Alex');
 echo 'test echo: ' . $user1->getName() .' '. $user1->getAge();
 */
 
-/*second method with CONSTRUCT
-$user1 = new User('vITALI');
-echo 'TEST_ECHO: ' . $user1->getName() .','. $user1->getAge(). "\n";
-*/
+//second method with CONSTRUCT
+
+$x= "\n";
+
+$user1 = new User('vITALI', 27, 'yes');
+echo 'TEST_ECHO: ' . $user1->getName() .','. $user1->getAge(). ', car: ' . $user1->car."\n";
+$exemple= $user1 . $x;
+echo 'magic method __toString: '.$exemple;
+
+$user2=new User('Alex', 10, 'tesla');
+echo 'Alex car: ' . $user2->car . $x;
+echo 'magic method toString: ' . $user2. $x;
+
+$user3=$user2;
+echo 'user3 name: ' . $user3 . $x;
