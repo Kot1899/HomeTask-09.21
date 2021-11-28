@@ -12,6 +12,11 @@ class User{
     protected $name;
     protected $age;
 
+    public function __construct($name)
+    {
+        $this->setName($name);
+    }
+
     public function setName($v_name){
         $this->name = $v_name;
     }
@@ -28,7 +33,7 @@ class User{
         return $this->age;
     }
 }
-
+/*
 class Worker extends User{
     private $salary;
 
@@ -81,3 +86,19 @@ class Driver extends Worker {
         return $this->category;
     }
 }
+*/
+
+/*  first method without CONSTRUCT
+$user1 = new User();
+    $user1-> setName('Vitali');
+    $user1->setAge(27);
+
+echo 'test echo: ' . $user1->getName() .' '. $user1->getAge(). "\n";
+$user1-> setName('Alex');
+echo 'test echo: ' . $user1->getName() .' '. $user1->getAge();
+*/
+
+/*second method with CONSTRUCT
+$user1 = new User('vITALI');
+echo 'TEST_ECHO: ' . $user1->getName() .','. $user1->getAge(). "\n";
+*/
