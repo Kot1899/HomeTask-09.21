@@ -8,6 +8,8 @@
 
 */
 
+$x= "\n";
+
 class User{
     protected $name;
     protected $age;
@@ -15,6 +17,7 @@ class User{
 
     public function __construct($name, $age, $car)
     {
+        echo '___constr' . "\n";
         $this->setName($name);
         $this->setAge($age);
         $this->setCar($car);
@@ -124,7 +127,6 @@ echo 'test echo: ' . $user1->getName() .' '. $user1->getAge();
 
 //second method with CONSTRUCT
 
-$x= "\n";
 
 $user1 = new User('vITALI', 27, 'nissan');
 echo 'TEST_ECHO: ' . $user1->getName() .','. $user1->getAge(). ', car: ' . $user1->getCar()."\n";
