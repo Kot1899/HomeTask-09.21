@@ -17,7 +17,7 @@ class User{
     {
         $this->setName($name);
         $this->setAge($age);
-        $this->car;
+        $this->setCar($car);
     }
 
     public function __destruct(){
@@ -27,7 +27,7 @@ class User{
     public function __toString(){
         // 3 options of magic method __toString:
 //       return $this->name;
-       return $this->getName();
+       return $this->getName() .' has ' . $this->getCar();
 //       return '__toString';
     }
 
@@ -45,6 +45,16 @@ class User{
 
     public function getAge(){
         return $this->age;
+    }
+
+    /**
+     * @return string
+     */
+    public function setCar($v_car){
+        $this->car=$v_car;
+    }
+    public function getCar(){
+        return $this->car;
     }
 }
 /*
@@ -116,13 +126,13 @@ echo 'test echo: ' . $user1->getName() .' '. $user1->getAge();
 
 $x= "\n";
 
-$user1 = new User('vITALI', 27, 'yes');
-echo 'TEST_ECHO: ' . $user1->getName() .','. $user1->getAge(). ', car: ' . $user1->car."\n";
+$user1 = new User('vITALI', 27, 'nissan');
+echo 'TEST_ECHO: ' . $user1->getName() .','. $user1->getAge(). ', car: ' . $user1->getCar()."\n";
 $exemple= $user1 . $x;
 echo 'magic method __toString: '.$exemple;
 
 $user2=new User('Alex', 10, 'tesla');
-echo 'Alex car: ' . $user2->car . $x;
+echo 'Alex car: ' . $user2->getCar() . $x;
 echo 'magic method toString: ' . $user2. $x;
 
 $user3=$user2;
