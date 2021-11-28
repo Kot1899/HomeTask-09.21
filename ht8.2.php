@@ -14,7 +14,7 @@ echo '<h2><i>Hello, Alex,  it is hometask #8/2</i></h2>';
 
 file_put_contents('people_list.txt',
     'FirstName;LastName;Age;Sex;
-Alex;Petrov;18;Man
+Alex;Petrov;ht18;Man
 Ivan;Petrov;14;Man
 Petr;Petrovich;20;Man
 Olga;Petrovna;24;Women

@@ -11,7 +11,7 @@ echo '<h2><i>Hello, Alex,  it is hometask #10</i></h2>';
 
 file_put_contents('users10.txt',
     'FirstName;Age;Sex;
-Alex;18;Man
+Alex;ht18;Man
 Ivan;14;Man
 Petr;20;Man
 Olga;24;Women
@@ -54,7 +54,7 @@ for ($i=0; $i<1; $i++) {
 
 
 for ($i=1; $i<$number; $i++) {
-    $controlAge = 18;
+    $controlAge = ht18;
     if ($users[$i][2] < $controlAge) {
 
         echo '<tr>';
