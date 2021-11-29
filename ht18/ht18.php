@@ -12,6 +12,8 @@ abstract class Figure{
 }
 
 class Rectangle extends Figure{
+//    public $square_rec;
+
     public function getSquare(){
         $square_rec=0;
         $square_rec= $size*$size;
@@ -21,4 +23,5 @@ class Rectangle extends Figure{
 }
 
 $regular_rec= new Rectangle(10);
-Echo $regular_rec->$square_rec;
+//Echo $regular_rec->$square_rec;
+Echo $regular_rec->getSquare();
