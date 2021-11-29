@@ -16,8 +16,8 @@ class Rectangle extends Figure{
 
     public function getSquare(){
         $square_rec=0;
-        $square_rec= $size*$size;
-        return $this->$square_rec;
+        $square_rec= $this->size*$this->size;
+        return $square_rec;
 
     }
 }
