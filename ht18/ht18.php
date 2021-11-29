@@ -18,6 +18,8 @@ abstract class Figure{
 
     protected $size;
     protected $size2;
+    public $per;
+    public $sq;
 
     public function __construct($v, $v2)
     {
@@ -29,7 +31,7 @@ abstract class Figure{
 
     public abstract function getPerimeter();
 
-    public abstract function PerToSq ($per, $sq){
+    public function PerToSq ($per, $sq){
     $this->per = $per;
     $this->sq = $sq;
     $q=$this->per/$this->sq;
