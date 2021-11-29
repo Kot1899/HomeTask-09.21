@@ -29,6 +29,12 @@ abstract class Figure{
 
     public abstract function getPerimeter();
 
+    public abstract function PerToSq ($per, $sq){
+    $this->per = $per;
+    $this->sq = $sq;
+    $q=$this->per/$this->sq;
+    return $q;
+}
     public function setSize($v_size){
         $this->size=$v_size;
     }
@@ -75,10 +81,15 @@ class Rectangle extends Figure{
         $perimeter_rec2= 2*($this->size+$this->size2);
         return $perimeter_rec2;
     }
+
+    $per=$perimeter_rec2;
+    $sq=$square_rec2;
+
 }
 
 $regular_rec= new RegRectangle(10, 1);
 Echo '-----regular rectangle-----' . "\n";
+Echo 'perToSq' . $regular_rec->$q. "\n";
 Echo 'square of regular rectangle :' . $regular_rec->getSquare(). "\n";
 Echo 'perimeter of regular rectangle :' . $regular_rec->getPerimeter(). "\n". "\n";
 
