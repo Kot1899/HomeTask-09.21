@@ -45,53 +45,13 @@ abstract class Figure{
     }
 }
 
-class RegRectangle extends Figure{
-//    public $square_rec;
-
-    public function getSquare(){
-        $square_rec= $this->size*$this->size;
-        return $square_rec;
-    }
-    public function getPerimeter(){
-        $perimeter_rec= 4*$this->size;
-        return $perimeter_rec;
-    }
-}
-
-class Circle extends Figure{
-
-    public function getSquare(){
-        // size - это радиус круга
-        $PI=3.14;
-        $square_cir= $this->size*$this->size*$PI;
-        return $square_cir;
-    }
-    public function getPerimeter(){
-        $PI=3.14;
-        $perimeter_cir= 4*$PI*$this->size;
-        return $perimeter_cir;
-    }
-}
-
-class Rectangle extends Figure{
-
-    public function getSquare(){
-        $square_rec2= $this->size*$this->size2;
-        return $square_rec2;
-    }
-    public function getPerimeter(){
-        $perimeter_rec2= 2*($this->size+$this->size2);
-        return $perimeter_rec2;
-    }
-
-    $per=$perimeter_rec2;
-    $sq=$square_rec2;
-
-}
+include 'circle.php';
+include 'rectangle.php';
+include 'Regregtangle.php';
 
 $regular_rec= new RegRectangle(10, 1);
 Echo '-----regular rectangle-----' . "\n";
-Echo 'perToSq' . $regular_rec->$q. "\n";
+
 Echo 'square of regular rectangle :' . $regular_rec->getSquare(). "\n";
 Echo 'perimeter of regular rectangle :' . $regular_rec->getPerimeter(). "\n". "\n";
 
@@ -102,5 +62,6 @@ Echo 'perimeter of circle :' . $circle->getPerimeter(). "\n". "\n";
 
 $rectangle= new Rectangle(10, 1);
 Echo '-----rectangle-----' . "\n";
+//Echo 'perToSq' . $rectangle->PerToSq(). "\n";
 Echo 'square of rectangle :' . $rectangle->getSquare(). "\n";
 Echo 'perimeter of rectangle :' . $rectangle->getPerimeter(). "\n". "\n";
