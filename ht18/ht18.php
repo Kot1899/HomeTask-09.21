@@ -62,6 +62,6 @@ Echo 'perimeter of circle :' . $circle->getPerimeter(). "\n". "\n";
 
 $rectangle= new Rectangle(10, 1);
 Echo '-----rectangle-----' . "\n";
-//Echo 'perToSq' . $rectangle->PerToSq(). "\n";
+Echo 'perToSq' . $rectangle->PerToSq(). "\n";
 Echo 'square of rectangle :' . $rectangle->getSquare(). "\n";
 Echo 'perimeter of rectangle :' . $rectangle->getPerimeter(). "\n". "\n";
