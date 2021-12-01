@@ -31,10 +31,10 @@ abstract class Figure{
 
     public abstract function getPerimeter();
 
-    public function PerToSq ($per, $sq){
-    $this->per = $per;
-    $this->sq = $sq;
-    $q=$this->per/$this->sq;
+    public function PerToSq (){
+//    $this-> getPerimeter();
+//    $this-> getSquare();
+    $q=$this->getPerimeter()/$this->getSquare();
     return $q;
 }
     public function setSize($v_size){
