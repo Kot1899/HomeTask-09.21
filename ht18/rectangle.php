@@ -9,7 +9,7 @@ class Rectangle extends Figure{
         $perimeter_rec2= 2*($this->size+$this->size2);
         return $perimeter_rec2;
     }
-    public function PerToSq($per, $sq)
+    public function PerToSq()
     {
         $per = $perimeter_rec2;
         $sq = $square_rec2;
