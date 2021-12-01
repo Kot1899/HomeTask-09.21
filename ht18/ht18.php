@@ -32,8 +32,7 @@ abstract class Figure{
     public abstract function getPerimeter();
 
     public function PerToSq (){
-//    $this-> getPerimeter();
-//    $this-> getSquare();
+
     $q=$this->getPerimeter()/$this->getSquare();
     return $q;
 }
@@ -51,17 +50,18 @@ include 'Regregtangle.php';
 
 $regular_rec= new RegRectangle(10, 1);
 Echo '-----regular rectangle-----' . "\n";
-
+Echo 'perToSq = ' . $regular_rec->PerToSq(). "\n";
 Echo 'square of regular rectangle :' . $regular_rec->getSquare(). "\n";
 Echo 'perimeter of regular rectangle :' . $regular_rec->getPerimeter(). "\n". "\n";
 
 $circle= new Circle(10, 1);
 Echo '-----circle-----' . "\n";
+Echo 'perToSq = ' . $circle->PerToSq(). "\n";
 Echo 'square of circle :' . $circle->getSquare(). "\n";
 Echo 'perimeter of circle :' . $circle->getPerimeter(). "\n". "\n";
 
 $rectangle= new Rectangle(10, 1);
 Echo '-----rectangle-----' . "\n";
-Echo 'perToSq' . $rectangle->PerToSq(). "\n";
+Echo 'perToSq = ' . $rectangle->PerToSq(). "\n";
 Echo 'square of rectangle :' . $rectangle->getSquare(). "\n";
 Echo 'perimeter of rectangle :' . $rectangle->getPerimeter(). "\n". "\n";
