@@ -18,8 +18,6 @@ abstract class Figure{
 
     protected $size;
     protected $size2;
-    public $per;
-    public $sq;
 
     public function __construct($v, $v2)
     {
