@@ -13,7 +13,7 @@
  параметры фигуры (периметр, площадь и отношение).
  */
 
-include 'inter.php';
+//include 'inter.php';
 include 'absr+inter.php';
 
 include 'circle2.php';
