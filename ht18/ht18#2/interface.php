@@ -1,0 +1,45 @@
+<?php
+/*
+ Рассмотрим прошлое задание и применим к нему тему интерфейса.
+Тебе необходимо работать с геометрическими фигурами, например, с квадратами, прямоугольниками, треугольниками и так далее.
+Пусть каждая фигура будет описываться своим классом, при этом ты хочешь сделать так, чтобы каждый класс имел метод для
+вычисления площади и метод для вычисления периметра фигуры.
+Сделаем для этого абстрактный класс Figure с двумя абстрактными методами getSquare и getPerimeter.
+Также реализуй такие классы как Rectangle (прямоугольник), Quadrate (квадрат), и любой другой на свое усмотрение.
+В абстрактном классе Figure, реализуй общий метод для вычисления отношения площади к периметру.
+Создай интерфейс, который будет требовать реализацию магического метода __toString, и используй этот интерфейс в абстрактном
+ классе. Это заставит твоих родительские классы реализовать этот метод.
+Пускай каждый класс (квадрат, прямоугольник, и т.д.), реализуют этот магический метод, и выводят строку, в которой указаны
+ параметры фигуры (периметр, площадь и отношение).
+ */
+
+include 'inter.php';
+include 'absr+inter.php';
+
+include 'circle2.php';
+include 'rectangle2.php';
+include 'Regregtangle2.php ';
+
+
+$regular_rec= new RegRectangle();
+$regular_rec->setSize(10);
+Echo '-----regular rectangle-----' . "\n";
+Echo $regular_rec;
+//Echo 'perToSq = ' . $regular_rec->PerToSq(). "\n";
+//Echo 'square of regular rectangle :' . $regular_rec->getSquare(). "\n";
+//Echo 'perimeter of regular rectangle :' . $regular_rec->getPerimeter(). "\n". "\n";
+
+$circle= new Circle();
+$circle->setSize(10);
+Echo '-----circle-----' . "\n";
+//Echo 'perToSq = ' . $circle->PerToSq(). "\n";
+//Echo 'square of circle :' . $circle->getSquare(). "\n";
+//Echo 'perimeter of circle :' . $circle->getPerimeter(). "\n". "\n";
+
+$rectangle= new Rectangle();
+$rectangle->setWidth(10);
+$rectangle->setHeight(1);
+Echo '-----rectangle-----' . "\n";
+//Echo 'perToSq = ' . $rectangle->PerToSq(). "\n";
+//Echo 'square of rectangle :' . $rectangle->getSquare(). "\n";
+//Echo 'perimeter of rectangle :' . $rectangle->getPerimeter(). "\n". "\n";
