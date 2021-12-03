@@ -1,4 +1,4 @@
 <?php
-//interface Magic23{
-//    public function __toString();
-//}
+interface Magic23{
+    public function __toString();
+}

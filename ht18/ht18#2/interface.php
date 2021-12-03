@@ -13,7 +13,7 @@
  параметры фигуры (периметр, площадь и отношение).
  */
 
-//include 'inter.php';
+include 'inter.php';
 include 'absr+inter.php';
 
 include 'circle2.php';
@@ -25,21 +25,14 @@ $regular_rec= new RegRectangle();
 $regular_rec->setSize(10);
 Echo '-----regular rectangle-----' . "\n";
 Echo $regular_rec;
-//Echo 'perToSq = ' . $regular_rec->PerToSq(). "\n";
-//Echo 'square of regular rectangle :' . $regular_rec->getSquare(). "\n";
-//Echo 'perimeter of regular rectangle :' . $regular_rec->getPerimeter(). "\n". "\n";
 
 $circle= new Circle();
 $circle->setSize(10);
 Echo '-----circle-----' . "\n";
-//Echo 'perToSq = ' . $circle->PerToSq(). "\n";
-//Echo 'square of circle :' . $circle->getSquare(). "\n";
-//Echo 'perimeter of circle :' . $circle->getPerimeter(). "\n". "\n";
+echo $circle;
 
 $rectangle= new Rectangle();
 $rectangle->setWidth(10);
 $rectangle->setHeight(1);
 Echo '-----rectangle-----' . "\n";
-//Echo 'perToSq = ' . $rectangle->PerToSq(). "\n";
-//Echo 'square of rectangle :' . $rectangle->getSquare(). "\n";
-//Echo 'perimeter of rectangle :' . $rectangle->getPerimeter(). "\n". "\n";
+Echo $rectangle;
