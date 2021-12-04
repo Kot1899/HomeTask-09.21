@@ -14,24 +14,26 @@
 Поскольку, у тебя два разных класса, то следует сделать их в разных файлах, и реализовать автозагрузку классов, для
 этого тебе подойдет функция — spl_autoload_register.
 */
-//namespace Romanenko\ht19;
 
-$alex= new User;
+//spl_autoload_register(function ($v){ include $v.'.php';});
+
+$alex= new \Ronanenko\User;
 $alex->name='Alex';
-$alex->age=10;
+$alex->age=rand(32,39);
 $alex->city='KH';
 
-$vlada= new User;
+$vlada= new \Ronanenko\User;
 $vlada->name='Vlada';
 $vlada->age=11;
 $vlada->city='NY';
 
-$vitali= new User;
+$vitali= new \Ronanenko\User;
 $vitali->name='Vitali';
 $vitali->age=rand(27,29);
 $vitali->city='LW';
 
-$users=[$alex,$vlada,$vitali];
-var_dump($users);
 
+$users=[$alex,$vlada,$vitali];
+spl_autoload_register(function ($v){ include $v.'.php';});
+//var_dump($users);
 

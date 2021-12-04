@@ -1,5 +1,5 @@
 <?php
-
+namespace Ronanenko;
 class User{
     public $name;
     public $age;
