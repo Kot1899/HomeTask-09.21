@@ -17,6 +17,7 @@
 
 //spl_autoload_register(function ($v){ include $v.'.php';});
 
+include 'Romanenko\User.php';
 $alex= new \Ronanenko\User;
 $alex->name='Alex';
 $alex->age=rand(32,39);
@@ -34,6 +35,7 @@ $vitali->city='LW';
 
 
 $users=[$alex,$vlada,$vitali];
-spl_autoload_register(function ($v){ include $v.'.php';});
+//spl_autoload_register(function ($v){ include $v.'.php';});
 //var_dump($users);
+echo $alex->city;
 
