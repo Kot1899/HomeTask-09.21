@@ -15,9 +15,9 @@
 этого тебе подойдет функция — spl_autoload_register.
 */
 
-//spl_autoload_register(function ($v){ include $v.'.php';});
+spl_autoload_register(function ($v){ include $v.'.php';});
 
-include 'Romanenko\User.php';
+//include 'Romanenko\User.php';
 $alex= new \Ronanenko\User;
 $alex->name='Alex';
 $alex->age=rand(32,39);
