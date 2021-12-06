@@ -1,8 +1,8 @@
 <?php
 
-include 'inter.php';
+include 'magic.php';
 
-abstract class Figure1 implements Magic23
+abstract class Figure1 implements Magic
 {
 
     protected $size;

@@ -1,5 +1,5 @@
 <?php
-class Quadrate extends Figure1{
+class quadrate extends Figure1{
 
 
     public function getSquare(){
