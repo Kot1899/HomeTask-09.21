@@ -14,17 +14,16 @@
  */
 
 //include 'inter.php';
-include 'absr+inter.php';
-
+include 'abstract_class.php';
 include 'circle2.php';
 include 'rectangle2.php';
-include 'Regregtangle2.php ';
+include 'Quadrate.php ';
 
 
-$regular_rec= new RegRectangle();
-$regular_rec->setSize(10);
+$Quadrate= new Quadrate();
+$Quadrate->setSize(10);
 Echo '-----regular rectangle-----' . "\n";
-Echo $regular_rec;
+Echo $Quadrate;
 
 $circle= new Circle();
 $circle->setSize(10);
