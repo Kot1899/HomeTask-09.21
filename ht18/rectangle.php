@@ -1,5 +1,5 @@
 <?php
-class Rectangle extends Figure{
+class rectangle extends figure{
 
     public function getSquare(){
         $square_rec2= $this->height*$this->width;

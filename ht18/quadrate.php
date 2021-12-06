@@ -1,5 +1,5 @@
 <?php
-class RegRectangle extends Figure{
+class quadrate extends figure{
 //    public $square_rec;
 
     public function getSquare(){

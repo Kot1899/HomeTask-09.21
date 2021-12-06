@@ -1,5 +1,5 @@
 <?php
-abstract class Figure{
+abstract class figure{
 
     protected $size;
     protected $width;

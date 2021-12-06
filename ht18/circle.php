@@ -1,6 +1,6 @@
 <?php
 
-class Circle extends Figure{
+class circle extends figure{
 
     public function getSquare(){
         // size - это радиус круга

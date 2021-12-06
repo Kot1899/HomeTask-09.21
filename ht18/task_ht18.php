@@ -14,26 +14,26 @@ getPerimeter.
 
 В абстрактном классе Figure, реализуй общий метод для вычисления отношения площади к периметру.
  */
-include 'abstract.php';
+include 'figure.php';
 include 'circle.php';
 include 'rectangle.php';
-include 'Regregtangle.php';
+include 'quadrate.php';
 
-$regular_rec= new RegRectangle();
+$regular_rec= new quadrate();
 $regular_rec->setSize(10);
 Echo '-----regular rectangle-----' . "\n";
 Echo 'perToSq = ' . $regular_rec->PerToSq(). "\n";
 Echo 'square of regular rectangle :' . $regular_rec->getSquare(). "\n";
 Echo 'perimeter of regular rectangle :' . $regular_rec->getPerimeter(). "\n". "\n";
 
-$circle= new Circle();
+$circle= new circle();
 $circle->setSize(10);
 Echo '-----circle-----' . "\n";
 Echo 'perToSq = ' . $circle->PerToSq(). "\n";
 Echo 'square of circle :' . $circle->getSquare(). "\n";
 Echo 'perimeter of circle :' . $circle->getPerimeter(). "\n". "\n";
 
-$rectangle= new Rectangle();
+$rectangle= new rectangle();
 $rectangle->setWidth(10);
 $rectangle->setHeight(1);
 Echo '-----rectangle-----' . "\n";
