@@ -18,17 +18,17 @@
 spl_autoload_register(function ($v){ include $v.'.php';});
 
 //include 'Romanenko\User.php';
-$alex= new \Ronanenko\User;
+$alex= new \Romanenko\User;
 $alex->name='Alex';
 $alex->age=rand(32,39);
 $alex->city='KH';
 
-$vlada= new \Ronanenko\User;
+$vlada= new \Romanenko\User;
 $vlada->name='Vlada';
 $vlada->age=11;
 $vlada->city='NY';
 
-$vitali= new \Ronanenko\User;
+$vitali= new \Romanenko\User;
 $vitali->name='Vitali';
 $vitali->age=rand(27,29);
 $vitali->city='LW';

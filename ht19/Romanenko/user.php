@@ -1,5 +1,5 @@
 <?php
-namespace Ronanenko;
+namespace Romanenko;
 trait Naming{
     public $name;
 }
