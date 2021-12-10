@@ -8,7 +8,7 @@ class Control{
                 return $v;
         }
 //$adult = 18;
-array_filter($users,$v);
+array_filter($users,Adult);
     }
 }
 

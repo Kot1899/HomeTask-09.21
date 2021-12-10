@@ -36,6 +36,7 @@ $vitali->city='LW';
 
 $users=[$alex,$vlada,$vitali];
 //spl_autoload_register(function ($v){ include $v.'.php';});
-//var_dump($users);
+
 echo $alex->city;
+var_dump($users);
 
