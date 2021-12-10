@@ -38,5 +38,12 @@ $users=[$alex,$vlada,$vitali];
 //spl_autoload_register(function ($v){ include $v.'.php';});
 
 echo $alex->city;
-var_dump($users);
+//var_dump($users);
 
+$adult=18;
+for ($i=0; $i<3; $i++){
+       if ($users [$i]['age']>$adult) {
+        $users[]=$users [$i]['age'];
+        }
+}
+var_dump($users);
