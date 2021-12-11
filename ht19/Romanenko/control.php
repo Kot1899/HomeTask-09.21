@@ -1,14 +1,18 @@
 <?php
+namespace Romanenko;
+class Control{
+    public function Filter($users){
+    $adult=18;
+    $users_new=[];
+        for ($i=0; $i<3; $i++){
+            if ($users[$i]->age > $adult) {
+                $users_new[]=$users[$i];
+            }
+        }
+       return $users_new;
+    }
+}
 
-//class Control{
-//    public function Filter(){
-//
-//        public function Adult($v){
-//            if ($v>18)
-//                return $v;
-//        }
-////$adult = 18;
-//array_filter($users,Adult);
-//    }
-//}
 
+
+array_filter($users,function($v));
