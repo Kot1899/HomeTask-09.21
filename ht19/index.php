@@ -14,8 +14,10 @@
 Поскольку, у тебя два разных класса, то следует сделать их в разных файлах, и реализовать автозагрузку классов, для
 этого тебе подойдет функция — spl_autoload_register.
 */
+/*
 spl_autoload_register(function ($v){ include $v.'.php';});
-
+*/
+spl_autoload_register(function ($v){ include $v. '.php';});
 //include 'Romanenko\User.php';
 $alex= new \Romanenko\User;
 $alex->name='Alex';
@@ -34,8 +36,9 @@ $vitali->city='LW';
 
 
 $users=[$alex,$vlada,$vitali];
-//echo $alex->city;
+//spl_autoload_register(function ($v){ include $v.'.php';});
 //var_dump($users);
+echo $alex->city;
 
 //foreach ($users as $v){
 //    if ($v->age > $adult) {
