@@ -14,3 +14,4 @@ exaple:Alex;13;Male
 VITa;10;Male
 Vitali;27;Male
 LUdmila;30;FeMale
+Mike;15;Male
