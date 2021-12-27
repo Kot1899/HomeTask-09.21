@@ -13,7 +13,7 @@
 Усложнение — сделать постраничную навигацию пользователей. На одну страницу может быть показано 5 пользователей.
 У списка должна быть возможность перейти на следующую, предыдущую, первую и последнюю страницы.
  */
-
+/*
 echo '<h2><i>Hello, Alex,  it is hometask #23</i></h2>';
 
 echo '<pre>';
@@ -44,3 +44,48 @@ $array_people1 = implode("\n", $usersALL);
 file_put_contents('users23.txt',$array_people1);
 echo "U amazing) let's doing ht24";
 
+*/
+
+$connection = new PDO('mysql:host=localhost; dbname=myCat', 'root', "123123");
+
+$name= $_POST['NAME'];
+$age= $_POST['AGE'];
+$number= $_POST['number'];
+$serial= $_POST['serial'];
+$date_of_issure= $_POST['date_of_issure'];
+
+$connection->exec(  "insert into user (name, age)  values ($name, $age) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//$stmt = $db->prepare("INSERT INTO user");
+//$stmt->execute();
+//$userId = $db->lastInsertId(); 
+//
+//$stmt = $db->prepare("INSERT INTO passport (user_id, number) (:userId, :number)");
+//$stmt->bindParam(':userId', $userId);

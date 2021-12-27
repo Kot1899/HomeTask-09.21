@@ -27,14 +27,22 @@
         width: 160px;
     }
     .submit{
-        margin:20%;
+        /*margin:40%*/
+        position: relative;
+        top: 8px; left: 40%;
+    }
+    .passport{
+        font-size: 26px ;
+        color: darkred;
+        position: relative;
+        left: 35%;
     }
     strong{
         font-size: 36px ;
-        color: #696969;
+        color: darkred;
         position: absolute;
-        left: 40%;
-        transform: translate(-50%);
+        left: 30%;
+        /*transform: translate(-50%);*/
     }
 
 </style>
@@ -47,10 +55,19 @@
         <input type="text" size="20" name="NAME" VALUE="exaple:Alex" /> </span> <br/>
         <span> Age: <br/>
         <input type="number" size="20"  name="AGE" VALUE="AGE_" /> </span> <br/>
-        <p class="sex_class"> Sex: <input type="radio" name="SEX" VALUE="Male"/> <strong><font style="color: red" size="5">Male</font></strong> <br/>
-            Sex: <input type="radio" name="SEX" VALUE="FeMale"/> <strong><font style="color: #005500" size="5">FeMale</font></strong>
-        </p> <br/>
-        <span class="submit"> <button type="submit"> Press me pls, it's was ht23) </button> </span>
+
+<!--        <p class="sex_class"> Sex: <input type="radio" name="SEX" VALUE="Male"/> <strong><font style="color: red" size="5">Male</font></strong> <br/>-->
+<!--            Sex: <input type="radio" name="SEX" VALUE="FeMale"/> <strong><font style="color: #005500" size="5">FeMale</font></strong>-->
+<!--        </p> <br/>-->
+
+        <span class="passport">Passport: </span> <br/>
+            <span> Number: <br/>
+        <input type="number" size="20"  name="number" VALUE="number_" /> </span> <br/>
+             <span> Serial: <br/>
+        <input type="text" size="20"  name="serial" VALUE="MT" /> </span> <br/>
+            <span> Date of issure: <br/>
+        <input type="text" size="20"  name="date_of_issure" VALUE="01.12.2000" /> </span> <br/>
+        <span class="submit"> <button type="submit"> DONE) </button> </span>
     </div>
 </form>
 
