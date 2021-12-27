@@ -46,15 +46,28 @@ echo "U amazing) let's doing ht24";
 
 */
 
-$connection = new PDO('mysql:host=localhost; dbname=myCat', 'root', "123123");
+$connection = new PDO('mysql:host=localhost; dbname=ht23', 'root', "123123");
 
 $name= $_POST['NAME'];
 $age= $_POST['AGE'];
+$sex= $_POST['sex'];
 $number= $_POST['number'];
 $serial= $_POST['serial'];
 $date_of_issure= $_POST['date_of_issure'];
 
-$connection->exec(  "insert into user (name, age)  values ($name, $age) );
+$sql = "insert into user (name, age, sex) values('$name','$age', '$sex')";
+$stm =$connection->exec($sql);
+
+//Echo 'ok';
+
+$stmt = $connection->prepare("INSERT INTO user");
+$stmt->execute();
+$userId = $connection->lastInsertId();
+
+$stmt = $connection->prepare("INSERT INTO passport (user_id) (:userId)");
+$stmt->bindParam(':userId', $userId);
+
+$stmt->execute();
 
 
 
@@ -79,13 +92,3 @@ $connection->exec(  "insert into user (name, age)  values ($name, $age) );
 
 
 
-
-
-
-
-//$stmt = $db->prepare("INSERT INTO user");
-//$stmt->execute();
-//$userId = $db->lastInsertId(); 
-//
-//$stmt = $db->prepare("INSERT INTO passport (user_id, number) (:userId, :number)");
-//$stmt->bindParam(':userId', $userId);
