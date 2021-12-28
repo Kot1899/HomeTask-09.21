@@ -1,3 +1,0 @@
-exaple:Alex3;34;Male
-exaple:Alex4;44;Malecgjhn
-alex;38;Male
