@@ -36,7 +36,7 @@ $button3= "NEXT PAGE";
 $button4= "LAST PAGE";
 echo '<br>'.'<a href="/previous.phpl"><strong><font size="3" color="#006400">' .$button2. '</strong></font size="6"color="#006400"></a>' . '___________';
 echo '<a href="/next.php"><strong><font size="3" color="#006400">' .$button3. '</strong></font size="6"color="#006400"></a>' .'<br>'.'<br>';
-echo '<a href="/ht23.php"><strong><font size="3" color="#006400">' .$button1. '</strong></font size="6"color="#006400"></a>' . '________________';
+echo '<a href="/ht24.php"><strong><font size="3" color="#006400">' .$button1. '</strong></font size="6"color="#006400"></a>' . '________________';
 echo '<a href="/last.php"><strong><font size="3" color="#006400">' .$button4. '</strong></font size="6"color="#006400"></a>' ;
 
 
