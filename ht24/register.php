@@ -8,18 +8,26 @@ $connection = new PDO('mysql:host=localhost; dbname=ht23', 'root', "123123");
 $login= $_POST['Login'];
 $password= $_POST['Passw'];
 
-if ($login=='root' && $password=='123123' or $login=='admin' && $password=='admin' ){
+// №2 проверка с БД
+
+$sgl="SELECT * FROM registration where login='$login' and password='$password'";
+$stm= $connection->query($sgl);
+$stm->execute();
+$list=$stm->fetchAll(PDO::FETCH_ASSOC);
+
+if ($list!=null){
     $reg=true;
-    $_session['registr']=$reg;
+    $_session['register']=$reg;
 } else{
     $reg=false;
-    $_session['registr']=$reg;
+    $_session['register']=$reg;
 }
 
-// №2 проверка
+// №3 направление на след страничку
 if($_session['register']==true){
     header("Location: index24.html");
 
 } else{
     header("Location: fault.html");
 }
+
