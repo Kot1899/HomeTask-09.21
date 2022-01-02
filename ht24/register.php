@@ -10,7 +10,8 @@ $password= $_POST['Passw'];
 
 // №2 проверка с БД
 
-$sgl="SELECT * FROM registration where login='$login' and password='$password'";
+//$sgl="SELECT * FROM registration where login="'.$login.' "and password="'.$password.';
+$sgl="SELECT * FROM registration where login='" . $login . "' and password='" . $password . "'";
 $stm= $connection->query($sgl);
 $stm->execute();
 $list=$stm->fetchAll(PDO::FETCH_ASSOC);
