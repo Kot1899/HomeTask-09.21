@@ -1,4 +1,5 @@
-//  выведем в кнопку значение то что ввели в калькулятор
+//  первая кнопка для примера с числом
+
 function calculator(){
     let inputElement=document.getElementById('input');// переменная для поля ввода
 
@@ -7,6 +8,7 @@ function calculator(){
     inputElement.innerText=inputElement+sevenVal;   // в кнопку переименовуем на значения из инпута
 }
 
+// кнопка сброса ввода =РАБОТАЕТ
 function clearbutton(){
     let inputElement=document.getElementById('input');
     inputElement.value=''; //присвоим значение что равно пустоте
