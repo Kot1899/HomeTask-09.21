@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <body>
+
+    <p>
+    Hello world!
+    </p>
+
+            <body>
+<!--    первая часть урока - основные элементы js-->
+        <script>
+// переменные и замена echo
+            age=10;
+            name_user = 'Alex';
+            // document.write('name: ', name_user);
+
+//условные операторы
+            if( age>10){
+                //adult
+            } else{
+                //child
+            }
+
+            for (i=0; i<5; i++){
+            }
+
+//функции
+        function getUser(arg1, arg2){
+                t=10;
+                y=20;
+                z=t+y;
+
+                return z;
+                }
+
+// работа с консолью и метод LOG -  позволяет в консоле вывести текст
+console.log('Alex');
+
+//конкатонация
+
+document.write('kate '+name_user+' hello')
+
+//  пример замены strleng v js:
+console.log('hello '+name_user+' , len:'+ name_user.length);
+
+
+// конструкция let , cont (var - старый варианат предыдущих 2) - позволяет наполнить переменную глобальной видимостью
+let - 'переменная просто, но локальная'
+const - 'константа'
+var - 'тоже переменная но глобальная'
+
+
+        </script>
+            </body> //first
+            <body>
+<!--    вторая часть урока - манипуляция-->
+манипуляция через id :  (стати самамя старая и примитивная) состоит из 2 вариантов - текст и свойства изменять
+• вариант №1: манипуляция свойст - innerHTML
+
+    <p id="text_simple">
+        Hello world!
+    </p>
+    <script>
+        let txt= document.getElementById('text_simple'); // это мы обратиись только
+        txt.innerHTML='<strong> Hello</strong> world';  //  это innerHTML позволяет изменить свойства, например шрифт
+    </script>
+
+    • вариант №2: манипуляция текста - innerText
+    <button id="btn">name_of_button</button>
+
+    <script>
+        let butt= document.getElementById('btn'); // это мы обратиись только
+        butt.innerText='NEW name of button';  //    это innerText позволяет менять текст
+
+        //    или строки 72-73 можно записать в 1 строке, а именно:
+        //     document.getElementById('btn').innerText='new name of button2';
+
+        butt.style.border='1px solid red'; //это мы задали стиль границ кнопки
+
+    </script>
+
+</body>//second
+
+            <body>
+<!--третья часть урока - события и подключение src-->
+    <button id="btn"onclick="change_button() ">name_of_button</button>
+    <script src="main1.js"></script>
+
+</body>//third
+
+    <body>
+<!--четвертая часть - создание калькулятора-->
+    <input type="text" id="enter" />
+<button id="btn"onclick="calculator() ">name_of_button</button>
+<button onclick="clearbutton() ">C</button>
+<script src="main1.js"></script>
+    </body>//fourth
+</head>
+<body>
+
+</body>
+</html>

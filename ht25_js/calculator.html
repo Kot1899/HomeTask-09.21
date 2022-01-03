@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<style>
+    div{
+        width: 214px;
+        height: 288px;
+        /*padding: 40px;*/
+        border: 1px double  orangered;
+        background-color: #f0f0f0;
+        /*border-radius: 15px;*/
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .button_input{
+        height:40px;
+        width:210px;
+        font-size: 25px;
+        color: orangered;
+        background-color: #ffffff;
+        border: none;
+    }
+    .button_number{
+        height:40px;
+        width:50px;
+        font-size: 25px;
+        color: black;
+        background-color: #f0f0f0;
+        border: none;
+    }
+    .button_option{
+        height:40px;
+        width:50px;
+        font-size: 25px;
+        color: orangered;
+        background-color: #f0f0f0;
+        border: none;
+    }
+    .button_option2{
+        height:40px;
+        width:40px;
+        font-size: 25px;
+        color: white;
+        background-color: orangered;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        left: 168px;
+    }
+</style>
+
+<!--    кнопки и поля ввода-->
+    <div>
+    <input class="button_input" type="text" id="result"/> <br/>
+    <input class="button_input" type="text" id="input" /> <br/>
+        <button class="button_option" id="%"onclick="calculator()">%</button>
+        <button class="button_option" id="CE"onclick="clearbutton()">CE</button>
+        <button class="button_option" id="M-"onclick="calculator()">M-</button>
+        <button class="button_option" id="M+"onclick="calculator()">M+</button><br/>
+    <button class="button_number" id="7"onclick="calculator()">7</button>
+    <button class="button_number" id="8"onclick="calculator()">8</button>
+    <button class="button_number" id="9"onclick="calculator()">9</button>
+    <button class="button_option" id="*"onclick="calculator()">*</button><br/>
+    <button class="button_number" id="4"onclick="calculator()">4</button>
+    <button class="button_number" id="5"onclick="calculator()">5</button>
+    <button class="button_number" id="6"onclick="calculator()">6</button>
+    <button class="button_option" id="-"onclick="calculator()">-</button><br/>
+    <button class="button_number" id="1"onclick="calculator()">1</button>
+    <button class="button_number" id="2"onclick="calculator()">2</button>
+    <button class="button_number" id="3"onclick="calculator()">3</button>
+    <button class="button_option" id="+"onclick="calculator()">+</button><br/>
+    <button class="button_option" id="C"onclick="clearbutton()">C</button>
+    <button class="button_number" id="0"onclick="calculator()">0</button>
+    <button class="button_number" id=","onclick="calculator()">,</button>
+    <button class="button_option2" id="="onclick="calculator()">=</button><br/>
+    </div>
+
+<!--    <input type="text" id="enter" />-->
+<!--    <button id="btn"onclick="calculator() ">name_of_button</button>-->
+
+    <script src="js1.js"></script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>
