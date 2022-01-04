@@ -24,7 +24,7 @@ function calculateNumber(el){
 }
 
 
-//метод для символов
+// метод для символов
 function calculateSymbol(elem){
     let inputValue=document.getElementById('input').value; //inputValue - это перменная А с числом которую запоминаем
     let symbol= elem.value; //el.value - это переменная ЗНАК МАТ-ОПЕРАЦИИ
@@ -37,28 +37,28 @@ function calculateSymbol(elem){
 
 //метод для выполнения функции РАВНО
 function equals(){
-    let equalsElement=document.getElementById('=')  //обращаемся к кнопке РАВНО
-    let resultElement=document.getElementById('result');   // обратились к нопке РЕЗАЛТ
-    let result; // некая перменная которая примет в себя результат логического вычесления
-
-    switch (symbol){
-        case '+':
-            result=inputValue"+"number;
-            break;
-        case '-':
-            result=inputValue"-"number;
-            break;
-        case '*':
-            result=inputValue"*"number;
-            break;
-        case '/':
-            result=inputValue"/"number;
-            break;
-        default:
-            result='error';
-    }
-    resultElement.value= result;  //  в поле РЕЗУЛЬТАТА калькулятора выведется значение итоговое
-    document.getElementById('input').value='';  //после выполнения расчета поле INPUT становится пустым
+    // let equalsElement=document.getElementById('=')  //обращаемся к кнопке РАВНО
+    // let resultElement=document.getElementById('result');   // обратились к нопке РЕЗАЛТ
+    // let result; // некая перменная которая примет в себя результат логического вычесления
+    //
+    // switch (symbol){
+    //     case '+':
+    //         result=inputValue"+"number;
+    //         break;
+    //     case '-':
+    //         result=inputValue"-"number;
+    //         break;
+    //     case '*':
+    //         result=inputValue"*"number;
+    //         break;
+    //     case '/':
+    //         result=inputValue"/"number;
+    //         break;
+    //     default:
+    //         result='error';
+    // }
+    // resultElement.value= result;  //  в поле РЕЗУЛЬТАТА калькулятора выведется значение итоговое
+    //  document.getElementById('input').value='';  //после выполнения расчета поле INPUT становится пустым
 }
 
 
