@@ -6,12 +6,12 @@ function clearbutton(){
 
 
 //  первая кнопка для примера с числом
-function calculator(){
-    let inputElement=document.getElementById('input');// переменная для поля ввода
-    let sevenElement=document.getElementById('7'); // переменная для button 7
-    let sevenVal= '7';   // присвоили в переменную значение что будем вводить
-    inputElement.value = inputElement.value+sevenVal;
-}
+// function calculator(){
+//     let inputElement=document.getElementById('input');// переменная для поля ввода
+//     let sevenElement=document.getElementById('7'); // переменная для button 7
+//     let sevenVal= '7';   // присвоили в переменную значение что будем вводить
+//     inputElement.value = inputElement.value+sevenVal;
+// }
 
 
 //функция с аргументом (реализовал для кнопки 0-9)
