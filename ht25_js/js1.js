@@ -3,18 +3,27 @@
 function calculator(){
     let inputElement=document.getElementById('input');// переменная для поля ввода
     let sevenElement=document.getElementById('7'); // переменная для button 7
+
     let sevenVal= '7';   // присвоили в переменную значение что будем вводить
-    // let eightVal= '8';
-    // let nineVal= '9';
-    // let fourVal= '4';
-    // let fiveVal= '5';
-    // let sixVal= '6';
-    // let oneVal= '1';
-    // let twoVal= '2';
-    // let threeVal= '3';
     inputElement.value = inputElement.value+sevenVal;
-        // +eightVal+nineVal+fourVal+fiveVal+sixVal+oneVal+twoVal+threeVal;
 }
+
+//функция с аргументом (реализовал для кнопки 8)
+function calculate(el){
+    let inputElement=document.getElementById('input');
+    el.value;
+    inputElement.value = inputElement.value+el.value;
+}
+
+//метод для выполнения функции РАВНО
+function equals(){
+    let equalsElement=document.getElementById('=')  //обращаемся к кнопке РАВНО
+    /*
+   необходимо тут реализовать чтобы в кнопке input выполнился расчет и после значение попало в поле result
+     */
+    document.getElementById('input').value='';  //после выполнения расчета поле INPUT становится пустым
+}
+
 
 // кнопка сброса ввода =РАБОТАЕТ
 function clearbutton(){

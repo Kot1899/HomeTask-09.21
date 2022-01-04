@@ -56,26 +56,26 @@
     <div>
     <input class="button_input" type="text" id="result"/> <br/>
     <input class="button_input" type="text" id="input" /> <br/>
-        <button class="button_option" id="%"onclick="calculator()">%</button>
+        <button class="button_option" id="%"onclick="calculate(this);value='%'">%</button>
         <button class="button_option" id="CE"onclick="clearbutton()">CE</button>
-        <button class="button_option" id="M-"onclick="calculator()">M-</button>
-        <button class="button_option" id="M+"onclick="calculator()">M+</button><br/>
+        <button class="button_option" id="M-"onclick="calculate(this);value='M-'">M-</button>
+        <button class="button_option" id="M+"onclick="calculate(this);value='M+'">M+</button><br/>
     <button class="button_number" id="7"onclick="calculator()">7</button>
-    <button class="button_number" id="8"onclick="calculator()">8</button>
-    <button class="button_number" id="9"onclick="calculator()">9</button>
-    <button class="button_option" id="*"onclick="calculator()">*</button><br/>
-    <button class="button_number" id="4"onclick="calculator()">4</button>
-    <button class="button_number" id="5"onclick="calculator()">5</button>
-    <button class="button_number" id="6"onclick="calculator()">6</button>
-    <button class="button_option" id="-"onclick="calculator()">-</button><br/>
-    <button class="button_number" id="1"onclick="calculator()">1</button>
-    <button class="button_number" id="2"onclick="calculator()">2</button>
-    <button class="button_number" id="3"onclick="calculator()">3</button>
-    <button class="button_option" id="+"onclick="calculator()">+</button><br/>
+    <button class="button_number" id="8"onclick="calculate(this);value=8">8</button>
+    <button class="button_number" id="9"onclick="calculate(this);value=9">9</button>
+    <button class="button_option" id="*"onclick="calculate(this);value='*'">*</button><br/>
+    <button class="button_number" id="4"onclick="calculate(this);value=4">4</button>
+    <button class="button_number" id="5"onclick="calculate(this);value=5">5</button>
+    <button class="button_number" id="6"onclick="calculate(this);value=6">6</button>
+    <button class="button_option" id="-"onclick="calculate(this);value='-'">-</button><br/>
+    <button class="button_number" id="1"onclick="calculate(this);value='1'">1</button>
+    <button class="button_number" id="2"onclick="calculate(this);value=2">2</button>
+    <button class="button_number" id="3"onclick="calculate(this);value=3">3</button>
+    <button class="button_option" id="+"onclick="calculate(this);value='+'">+</button><br/>
     <button class="button_option" id="C"onclick="clearbutton()">C</button>
-    <button class="button_number" id="0"onclick="calculator()">0</button>
-    <button class="button_number" id=","onclick="calculator()">,</button>
-    <button class="button_option2" id="="onclick="calculator()">=</button><br/>
+    <button class="button_number" id="0"onclick="calculate(this);value=0">0</button>
+    <button class="button_number" id=","onclick="calculate(this);value='.'">,</button>
+    <button class="button_option2" id="="onclick="equals()">=</button><br/>
     </div>
 
    <script src="js1.js"></script>
