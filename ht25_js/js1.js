@@ -20,7 +20,11 @@ function equals(){
     let equalsElement=document.getElementById('=')  //обращаемся к кнопке РАВНО
     /*
    необходимо тут реализовать чтобы в кнопке input выполнился расчет и после значение попало в поле result
+
      */
+    let resultElement=document.getElementById('result');   // обратились к нопке РЕЗАЛТ
+    let result; // некая перменная которая примет в себя результат логического вычесления
+    resultElement.innerText= result;
     document.getElementById('input').value='';  //после выполнения расчета поле INPUT становится пустым
 }
 
