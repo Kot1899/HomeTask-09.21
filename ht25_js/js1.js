@@ -25,18 +25,20 @@ function calculateNumber(el){
     let resultElement=document.getElementById('result');
     document.getElementById('result').value='';
     let inputElement=document.getElementById('input');
-    el.value;
-    inputElement.value = inputElement.value+el.value;
+    inputElement.value = inputElement.value+el.innerHTML;
     numberCal = inputElement.value;  //переменная Б, просто числа
 
 }
 
 // метод для символов
 function calculateSymbol(elem){
-    document.getElementById('input').value=''; //обнуляем поле сначала
+
     inputValue=document.getElementById('input').value; //inputValue - это перменная А с числом которую запоминаем
-    symbolCal= elem.value; //el.value - это переменная ЗНАК МАТ-ОПЕРАЦИИ
-    // let inputElement=document.getElementById('input');
+
+    document.getElementById('input').value=''; //обнуляем поле сначала
+
+    symbolCal= elem.innerHTML; // - это переменная ЗНАК МАТ-ОПЕРАЦИИ
+
     document.getElementById('input').value='';  //после выполнения расчета поле INPUT становится пустым
 
 }
@@ -44,8 +46,8 @@ function calculateSymbol(elem){
 
 //метод для выполнения функции РАВНО
 function equals(){
-    // let equalsElement=document.getElementById('=')  //обращаемся к кнопке РАВНО
-    let resultElement=document.getElementById('result');   // обратились к нопке РЕЗАЛТ
+
+     let resultElement=document.getElementById('result');   // обратились к нопке РЕЗАЛТ
 
     switch (symbolCal){
         case '+':
