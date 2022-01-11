@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">-->
+<!--  <link rel="stylesheet" href="/resources/demos/style.css">-->
+
+  <style>
+    .draggable { width: 60px; height: 60px; background-color: #8C959D}
+    #containment-wrapper { width: 1420px; height:710px;  }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+
+
+    $( function() {
+      $( "#draggable3" ).draggable({ containment: "#containment-wrapper", scroll: false });
+         } );
+  </script>
+</head>
+
+
+<body>
+
+<div id="containment-wrapper">
+  <div id="draggable3" class="draggable ui-widget-content">
+    <p>I&apos;m </p>
+  </div>
+
+
+
+</body>
+</html>
