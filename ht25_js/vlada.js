@@ -1,4 +1,4 @@
-Vlada Marchenko, [04.01.2022 21:31]
+// Vlada Marchenko, [04.01.2022 21:31]
 let a = '';
 
 let b = '';
@@ -46,11 +46,9 @@ document.querySelector('.ac').onclick = clearAll;
 
 document.querySelector('.buttons').onclick = (event) => {
 
-    if(!event.target.classList.contains('btn'))return;
+    if (!event.target.classList.contains('btn')) return;
 
-    if(event.target.classList.contains('ac'))return;
-
-
+    if (event.target.classList.contains('ac')) return;
 
 
     out.textContent = '';
@@ -58,25 +56,17 @@ document.querySelector('.buttons').onclick = (event) => {
     const key = event.target.textContent;
 
 
+    if (digit.includes(key)) {
 
-
-    if (digit.includes(key)){
-
-        if (b ==='' && sign === '') {
-
-
+        if (b === '' && sign === '') {
 
 
             a += key;
 
 
-
-
             out.textContent = a;
 
-        }
-
-        else if (a!== '' && b!== '' && finish){
+        } else if (a !== '' && b !== '' && finish) {
 
             b = key;
 
@@ -84,44 +74,36 @@ document.querySelector('.buttons').onclick = (event) => {
 
             out.textContent = b;
 
-        }
+        } else {
 
-        else {
-
-            b += key ;
+            b += key;
 
             out.textContent = b;
 
         }
 
 
-
-
         return;
 
     }
 
 
-
-
-    if (action.includes(key)){
+    if (action.includes(key)) {
 
         sign = key;
 
         out.textContent = sign;
 
 
-
-
         return;
 
     }
 
-    if (key === '='){
+    if (key === '=') {
 
-        if(b === '') b = a;
+        if (b === '') b = a;
 
-        switch (sign){
+        switch (sign) {
 
             case"+":
 
@@ -131,23 +113,23 @@ document.querySelector('.buttons').onclick = (event) => {
 
             case"-":
 
-                a = a - b ;
+                a = a - b;
 
                 break;
 
             case"X":
 
-                a = a * b ;
+                a = a * b;
 
                 break;
 
             case "/":
 
-                if(b === '0'){
+                if (b === '0') {
 
                     out.textContent = 'Ошибка';
 
-                    a= '';
+                    a = '';
 
                     b = '';
 
@@ -157,7 +139,7 @@ document.querySelector('.buttons').onclick = (event) => {
 
                 }
 
-                a = a / b ;
+                a = a / b;
 
                 break;
 
@@ -166,26 +148,21 @@ document.querySelector('.buttons').onclick = (event) => {
                 a = -Math.abs(a);
 
 
-
-
                 break;
 
             case"%":
 
-                a = (a/100);
-
-
+                a = (a / 100);
 
 
                 break;
 
         }
 
-        finish = true ;
+        finish = true;
 
         out.textContent = a;
 
 
-
-
     }
+};
