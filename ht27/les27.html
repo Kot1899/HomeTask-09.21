@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .cont{
+        background-color: yellow;
+        font-size: 18px;
+        border: 1px solid black;
+    }
+</style>
+<button id="btn" class="continue"> Hello Alex</button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    // СHANGE BUTTON TEXT
+
+    // simple js throught className
+    // var buttons=document.getElementsByClassName('continue');
+    // buttons[0].innerHTML='next name by class'
+
+    //simple js throught id
+    // var buttons=document.getElementById('btn');
+    // buttons.innerText='next name by ID'
+
+    // js with JQUERY throught ID
+    // $('#btn').text('Jquery by ID');
+    // // js with JQUERY throught className
+    // $('.continue').text('Jquery by className');
+    // // js with JQUERY throught tag
+    // $('button.continue').text('Jquery by Tag');
+
+    // СHANGE BUTTON STYLE
+
+    // simple js throught id
+    // var buttons=document.getElementById('btn');
+    // buttons.style.border='1px solid red';
+    // buttons.style.fontSize= '24px';
+    // buttons.style.color='green';
+
+    // js with JQUERY throught ID
+    $('#btn').css({
+        border: '1px solid red',
+        fontSize: '24px',
+        color:'blue'
+    });
+
+    //LISTEN CLICK EVENT
+    var buttons=document.getElementById('btn');
+    buttons.addEventListener('click', function (e){
+        alert("click me");
+    });
+
+$('#btn').on('click',function (e) {
+    alert('click with jquery')
+});
+
+
+</script>
+</body>
+</html>
