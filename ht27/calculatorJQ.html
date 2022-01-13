@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<style>
+    div{
+        width: 214px;
+        height: 288px;
+        /*padding: 40px;*/
+        border: 1px double  orangered;
+        background-color: #f0f0f0;
+        /*border-radius: 15px;*/
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .button_input{
+        height:40px;
+        width:210px;
+        font-size: 25px;
+        color: orangered;
+        background-color: #ffffff;
+        border: none;
+    }
+    .button_number{
+        height:40px;
+        width:50px;
+        font-size: 25px;
+        color: black;
+        background-color: #f0f0f0;
+        border: none;
+    }
+    .button_option{
+        height:40px;
+        width:50px;
+        font-size: 25px;
+        color: orangered;
+        background-color: #f0f0f0;
+        border: none;
+    }
+    .button_option2{
+        height:40px;
+        width:40px;
+        font-size: 25px;
+        color: white;
+        background-color: orangered;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        left: 168px;
+    }
+</style>
+
+<!--    кнопки и поля ввода-->
+    <br/>
+    <div>
+    <input class="button_input" type="text" id="result"/> <br/>
+    <input class="button_input" type="text" id="input" /> <br/>
+        <button class="button_option" onclick="calculateSymbol(this);">%</button>
+        <button class="button_option" onclick="clearbutton()">CE</button>
+        <button class="button_option" onclick="calculateSymbol(this);">M-</button>
+        <button class="button_option" onclick="calculateSymbol(this);">/</button><br/>
+    <button class="button_number" onclick="calculateNumber(this);">7</button>
+    <button class="button_number" onclick="calculateNumber(this)">8</button>
+    <button class="button_number" onclick="calculateNumber(this)">9</button>
+    <button class="button_option" onclick="calculateSymbol(this);">*</button><br/>
+    <button class="button_number" onclick="calculateNumber(this)">4</button>
+    <button class="button_number" onclick="calculateNumber(this)">5</button>
+    <button class="button_number" onclick="calculateNumber(this)">6</button>
+    <button class="button_option" onclick="calculateSymbol(this);">-</button><br/>
+    <button class="button_number" onclick="calculateNumber(this);">1</button>
+    <button class="button_number" onclick="calculateNumber(this);">2</button>
+    <button class="button_number" onclick="calculateNumber(this);">3</button>
+    <button class="button_option" onclick="calculateSymbol(this);">+</button><br/>
+    <button class="button_option" onclick="clearbutton()">C</button>
+    <button class="button_number" onclick="calculateNumber(this);">0</button>
+    <button class="button_number" onclick="calculateNumber(this);">,</button>
+    <button class="button_option2" onclick="equals()">=</button><br/>
+    </div>
+
+   <script src="js1JQ.js"></script>
+
+</head>
+<body>
+
+</body>
+</html>
