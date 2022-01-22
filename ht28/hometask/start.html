@@ -1,0 +1,60 @@
+<html>
+<body>
+<style>
+    div{
+        width: 300px;
+        height: 110px;
+        padding: 40px;
+        border: 4px double  #006600;
+        background-color: #3b5998;
+        border-radius: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    span{
+        align-items: center;
+        font-size: 8px;
+        color: #222222;
+        font-weight: bold;
+    }
+    .sex_class{
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 8px;
+        border: 2px blue double;
+        width: 160px;
+    }
+    .submit{
+        /*margin:40%*/
+        position: relative;
+        top: 8px; left: 40%;
+    }
+
+    strong{
+        font-size: 36px ;
+        color: #ffffff;
+        position: absolute;
+        left: 30%;
+
+    }
+
+</style>
+<form action="register.php" method="post">
+
+    <div>
+
+        <strong style="text-align: center"> Facebook </strong> <br/><br/><br/>
+        <span> <br/>
+        <input type="text" size="20" name="Login" VALUE="Login" /> </span> <br/>
+        <span>  <br/>
+        <input type="text" size="20"  name="Passw" VALUE="Password" /> </span> <br/>
+
+            <span class="submit"> <button type="submit"> Sign in </button> </span>
+
+    </div>
+</form>
+
+</body>
+</html>
