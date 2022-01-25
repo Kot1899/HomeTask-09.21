@@ -22,14 +22,19 @@ SESSION_START();
 
 // №2 подключится к БД
 
-$login= $_POST['Login'];
-$password= md5($_POST['Passw']);
+$login_danger = $_POST['Login'];
+if (strlen($login_danger)>0){
+    $login=$login_danger;
+};
+
+$password_danger= md5($_POST['Passw']);
+if (strlen($password_danger)>0){
+    $password=$password_danger;
+};
 
 // №2 проверка с БД
 
-//if ($user->password==md5($_POST['password'])){
-//
-//}
+
 
 $sgl="SELECT * FROM regist_hash where login='" . $login . "' and password='" . $password . "'";
 $stm= $connection->query($sgl);
