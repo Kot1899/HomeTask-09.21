@@ -14,7 +14,8 @@
 // №1 подключится к БД
 $connection = new PDO('mysql:host=localhost; dbname=ht23', 'root', "123123");
 
-$connection->exec(  "insert into regist_hash ( login, password_hash)  values ('root', md5('123123') ), ('admin', md5('admin'))");
+$connection->exec(  "insert into regist_hash ( login, password_hash) 
+ values ('root', md5('123123') ), ('admin', md5('admin'))");
 
 echo 'ok';
 

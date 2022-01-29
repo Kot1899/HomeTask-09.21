@@ -19,4 +19,4 @@ foreach ($users as $v){
 }
 echo '</table>';
 
-echo '<a href="/start.html">Back to start</a>';
+echo '<a href="/index.html">Back to start</a>';
