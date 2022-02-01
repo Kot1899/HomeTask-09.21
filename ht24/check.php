@@ -17,18 +17,18 @@ $stm->execute();
 $list=$stm->fetchAll(PDO::FETCH_ASSOC);
 
 if ($list!=null){
-    $reg=true;
-    $_session['register']=$reg;
+       $_SESSION['register']=true;
 } else{
-    $reg=false;
-    $_session['register']=$reg;
+    $_SESSION['register']=false;
 }
 
 // №3 направление на след страничку
-if($_session['register']==true){
+if($_SESSION['register']==true){
     header("Location: index24.html");
+}
 
-} else{
-    header("Location: fault.html");
+// №4 защита моего файла
+if($_SESSION['register']==false) {
+    header("Location: index.html");
 }
 
