@@ -24,7 +24,7 @@ if ($list!=null){
 
 // №3 направление на след страничку
 if($_SESSION['register']==true){
-    header("Location: index24.html");
+    header("Location: index242.html");
 }
 
 // №4 защита моего файла

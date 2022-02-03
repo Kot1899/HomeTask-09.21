@@ -43,7 +43,7 @@ if ($list!=null){
 
 // №3 направление на след страничку
 if($_session['register']==true){
-    header("Location: index24.html");
+    header("Location: index242.html");
 
 } else{
     header("Location: fault.html");
