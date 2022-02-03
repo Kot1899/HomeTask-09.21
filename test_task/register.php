@@ -6,9 +6,10 @@ $email_d= $_POST['Email'];
 $login_d= $_POST['Login'];
 $name_d= $_POST['Name'];
 $password_d= $_POST['Password'];
-$birth_date_d= $_POST['Birth date'];  //проверить чтобы исходно ко мне приходила стрка формата 2000-12-25
+$birth_date_d= $_POST['Date'];  //проверить чтобы исходно ко мне приходила стрка формата 2000-12-25
 $country_d= $_POST['Country'];
-
+echo $birth_date_d;
+/*
 session_start();
 
 //№2 checking all inputs before save
@@ -68,3 +69,4 @@ $stm =$connection->exec($sql);
 //if($_SESSION['register']==true){};
     header("Location: index_sign_in.html");
 
+*/
