@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FirstController@home');
+
+Route::get('/about', 'FirstController@about');
+
+//Route::get('/user/{id_user}/{name_user}', function ($id_user, $name_user) {   //чтобы поучить данные с url адресса
+//    return 'id:' . $id_user . ", name:" . $name_user;
+//});
+
