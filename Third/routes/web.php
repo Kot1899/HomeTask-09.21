@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
+//use App\Http\Controllers\MainController;
+use Illuminate\support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'FirstController@home');
+Route::get('/', 'MainController@home');
+//Route::get('/', [FirstController::class,'home']);
 
-Route::get('/about', 'FirstController@about');
+Route::get('/about', 'MainController@about');
+//Route::get('/about', [FirstController::class,'about']);
+
+Route::get('/review', 'MainController@review');
+
+
+
 
 //Route::get('/user/{id_user}/{name_user}', function ($id_user, $name_user) {   //чтобы поучить данные с url адресса
 //    return 'id:' . $id_user . ", name:" . $name_user;
