@@ -12,3 +12,4 @@ function header_line($line_header){
 function table_students($name, $age, $city){
     return sprintf('I%7sI%4sI%6sI', $name, $age, $city) . "\n";
 }
+
