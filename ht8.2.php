@@ -59,10 +59,10 @@ for ($i=0; $i<1; $i++) {
 for ($i=1; $i<$number; $i++) {
     $controlAge = 18;
     if ($users[$i][2] < $controlAge) {
-//        $name = $users[$i][0];
-//        $last_n = $users[$i][1];
-//        $age = $users[$i][2] . 'minor';
-//        $sex = $users[$i][3];
+//        $name = $users.txt[$i][0];
+//        $last_n = $users.txt[$i][1];
+//        $age = $users.txt[$i][2] . 'minor';
+//        $sex = $users.txt[$i][3];
 //        $pr = table_users9($name, $last_n, $age, $sex);
 //        echo $pr ;
         echo '<tr>';
@@ -75,10 +75,10 @@ for ($i=1; $i<$number; $i++) {
         echo '<br/>';
     }
     else {
-//        $name = $users[$i][0];
-//        $last_n = $users[$i][1];
-//        $age = $users[$i][2] . 'adult';
-//        $sex = $users[$i][3];
+//        $name = $users.txt[$i][0];
+//        $last_n = $users.txt[$i][1];
+//        $age = $users.txt[$i][2] . 'adult';
+//        $sex = $users.txt[$i][3];
 //        $pr = table_users9($name, $last_n, $age, $sex);
 //        echo $pr ;
         echo '<tr>';

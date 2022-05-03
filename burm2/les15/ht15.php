@@ -13,66 +13,59 @@ salary (зарплата), а также методы public getSalary и setSal
 задачи. Этот метод должен вносить следующие private поля: водительский стаж, категория
 вождения (A, B, C).
  */
-class User{
-    protected $name;
+class user{
+    protected  $name;
     protected $age;
-
-    public function setName($v_name){
-        $this->name = $v_name;
+    public function Set_name($v_name){
+    $this->name=$v_name;
     }
-
-    public function getName(){
+    public function Set_age($v_age){
+        $this->age=$v_age;
+    }
+    public function Get_name(){
         return $this->name;
     }
-
-    public function setAge($v_age){
-        $this->age = $v_age;
-    }
-    
-
-    public function getAge(){
+    public function Get_age(){
         return $this->age;
     }
 }
-
-class Worker extends User{
-    private $salary;
-
-    public function setSalary($v_salary){
-        $this->salary = $v_salary;
-    }
-
-    public function getSalary(){
-        return $this->salary;
-    }
+class worker extends user{
+ private $salary;
+ public function Get_salary(){
+     return $this->salary;
+ }
+ public function Set_salary($v_salary){
+     $this->salary=$v_salary;
+ }
 }
 
-$ivan= new Worker();
-$ivan->setName('Ivan');
-$ivan->setSalary(1000);
+$ivan= new worker();
+$ivan->Set_name('ivan');
+$ivan->Set_age(25);
+$ivan->Set_salary(1000);
 
-$vasya= new Worker();
-$vasya->setName('Vasya');
-$vasya->setSalary(2000);
+$vasya= new worker();
+$vasya->Set_name('vasya');
+$vasya->Set_age(26);
+$vasya->Set_salary(2000);
 
-$allman=[$ivan,$vasya];
-$sum=0;
-foreach ($allman as $v){
-    $sum+=$v->getSalary();
-}
-//var_dump($sum);
-echo 'Hello Akex, general salary of all man: '.$sum. "\n";
+$sum=$ivan->Get_salary()+$vasya->Get_salary();
+echo $sum;
 
-class Student extends User{
-    private $grant;
+class student extends user{
+    private $grand;
     private $course;
-
-    public function setGrant($v_grant){
-        $this->grant = $v_grant;
+    public function Get_grand(){
+        return $this->grand;
     }
-
-    public function getCourse(){
+    public function Set_grand($v_grand){
+        $this->grand=$v_grand;
+    }
+    public function Get_course(){
         return $this->course;
+    }
+    public function Set_course($v_course){
+        $this->course=$v_course;
     }
 }
 class Driver extends Worker {

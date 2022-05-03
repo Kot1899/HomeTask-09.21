@@ -18,7 +18,7 @@ if (array_key_exists('attach', $_FILES) && $_FILES['attach']['error']==0)
     move_uploaded_file($_FILES['attach']['tmp_name'], $_FILES['attach']['name']);
     $q=file_get_contents($_FILES['attach']['name']);
 
-    echo 'u users list:'."\n"."\n"  ;}
+    echo 'u users.txt list:'."\n"."\n"  ;}
 else { echo 'Guys, u have some problems';
 }
 //var_dump($_POST, $_FILES);

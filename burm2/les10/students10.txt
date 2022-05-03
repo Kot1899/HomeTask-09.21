@@ -17,6 +17,3 @@ LUdmila;30;FeMale
 Mike;15;Male
 bert;23;Male
 bert2.0;24;Male
-mike;26;FeMale
-fifa;12;FeMale
-lola;18;FeMale

@@ -1,0 +1,81 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Plan B POST</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<form action="ht12_foto.php" method="post">-->
+<!--    Name: <input type="text" name="NAME" value="your name"/> <br/>-->
+<!--    Age: <input type="number" name="AGE" value="your age"/> <br/>-->
+<!--    Sex: <input type="radio" name="SEX" value="male"/><strong>Male</strong><br/>-->
+<!--    Sex: <input type="radio" name="SEX" value="female"/><strong>female</strong><br/>-->
+<!--    <button type="submit">touch me pls</button>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+<html>
+<body>
+<style>
+    div{
+        width: 300px;
+        height: 300px;
+        padding: 40px;
+        border: 4px double  #006600;
+        background-color: #cde;
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    span{
+        align-items: center;
+        font-size: 20px;
+        color: #222222;
+        font-weight: bold;
+
+    }
+    .sex_class{
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 8px;
+        border: 2px blue double;
+        width: 260px;
+    }
+    .submit{
+        margin:40%;
+    }
+    strong{
+        font-size: 36px ;
+        color: #696969;
+        position: absolute;
+        left: 40%;
+        transform: translate(-50%);
+    }
+
+</style>
+<!--<form action="ht11.php" method="post" enctype="multipart/form-data">-->
+    <form action="index.php" method="post">
+
+    <div>
+
+        <strong style="text-align: center"> Hello, Alex </strong> <br/><br/><br/>
+        <span> Name:<br/>
+        <input type="text" size="20" name="NAME" VALUE="exaple:Vitali" /> </span> <br/>
+        <span> Age: <br/>
+        <input type="number" size="20"  name="AGE" VALUE="AGE_" /> </span> <br/>
+<!--        <span> File: <br/>-->
+<!--        <input type="file"  name="attach" accept="text/plain" VALUE="Users list"/> </span> <br/>-->
+
+<!--        <p class="sex_class"> Have u attached file?:-->
+            <br/>
+            <input type="radio" name="SEX" VALUE="Yes, i do"/> <font style="color: red" size="4">Yes, i do</font><br/>
+            <input type="radio" name="SEX" VALUE="No, sorry"/> <font style="color: red" size="4">No, sorry</font><br/>
+        </p>
+        <span class="submit"> <center> <button type="submit"> Press me pls and send file) </button> </center> </span>
+    </div>
+</form>
+
+</body>
+</html>

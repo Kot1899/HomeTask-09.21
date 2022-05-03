@@ -29,6 +29,6 @@ if($_SESSION['register']==true){
 
 // №4 защита моего файла
 if($_SESSION['register']==false) {
-    header("Location: index.html");
+    header("Location: index_foto.html");
 }
 

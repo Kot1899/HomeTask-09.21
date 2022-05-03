@@ -8,9 +8,9 @@
 //{
 //    foreach ($array_people as $v) {
 //        $usersFinish = explode(';', $v);
-//        $users[] = $usersFinish;
+//        $users.txt[] = $usersFinish;
 //    }
-//    return $users;
+//    return $users.txt;
 //}
 //
 //function For_show($name, $age){

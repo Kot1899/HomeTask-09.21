@@ -37,7 +37,7 @@ echo 'Кол-во элементов массива(через функцию):'
 $line1 ='——————————————';
 
 //third own function For_show:
-echo 'Our source array "users":' . "\n";
+echo 'Our source array "users.txt":' . "\n";
 // выведу с помощью цикла FOR обратный список:
 for ($i = $number-1; $i >= 0; $i--) {
     $name= $users[$i]['name'];
@@ -46,11 +46,11 @@ for ($i = $number-1; $i >= 0; $i--) {
 }
 
 /* в тестовом режиме выведу и проверю работу функции sprintf:
-echo sprintf('| %s | %d |', $users[1]['name'], $users[1]['age']);
+echo sprintf('| %s | %d |', $users.txt[1]['name'], $users.txt[1]['age']);
 */
 
-// our new table with users
-echo 'Our new table with "users":' . "\n";
+// our new table with users.txt
+echo 'Our new table with "users.txt":' . "\n";
 
 Header1($line1);
 

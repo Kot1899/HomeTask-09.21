@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home task #12</title>
+</head>
+<body>
+<style>
+    div{
+        width: 300px;
+        height: 300px;
+        padding: 40px;
+        border: 4px double  #006600;
+        background-color: #cde;
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    span{
+        align-items: center;
+        font-size: 20px;
+        color: #222222;
+        font-weight: bold;
+
+    }
+    .sex_class{
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 8px;
+        border: 2px blue double;
+        width: 260px;
+    }
+    .submit{
+        position: absolute;
+        left: 45%;
+        top: 90%;
+        transform: translate(-30%);
+    }
+    strong{
+        font-size: 26px ;
+        color: #696969;
+        position: absolute;
+        left: 40%;
+        transform: translate(-50%);
+    }
+
+</style>
+<form action="ht12.php" method="post" enctype="multipart/form-data">
+    <div>
+        <strong style="text-align: center"> Hello beautiful Kot</strong>
+        <br/>
+        <br/>
+        <br/>
+        <span>
+            Name:
+            <br/>
+            <input type="text" size="20" name="NAME" value="example: Alex"/>
+        </span>
+        <br/>
+        <span>
+            Age:
+            <br/>
+            <input type="number" size="20" name="AGE" placeholder="10"/>
+        </span>
+        <br/>
+        <span>
+            File:
+            <br/>
+            <input type="file" name="Attach" accept="text/plain" value="list"/>
+        </span>
+        <br/>
+        <p class="sex_class" > Have u attach your photo?
+            <br/>
+            <input type="radio" name="yes"/> <font style="color: red" size="4">yes, I attached my photo</font>
+            <br/>
+            <input type="radio" name="no"/> <font style="color: red" size="4">ups, no, I forget</font>
+            <br/>
+        </p>
+        <br/>
+        <span class="submit"> <center> <button type="submit"> Send photo</button> </center></span>
+    </div>
+</form>
+</body>
+</html>

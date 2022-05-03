@@ -51,8 +51,8 @@ $user3=Builder::AddtoPeople('Vlada', '9','KH');
 
 //echo '<pre>';
 //var_dump($user1, $user2, $user3);
-echo 'number of users: ' . builder::$counter . "\n";
-echo 'number of users (function CIUNT): ' . count(builder::getCounter()) . "\n";
+echo 'number of users.txt: ' . builder::$counter . "\n";
+echo 'number of users.txt (function CIUNT): ' . count(builder::getCounter()) . "\n";
 
 
 

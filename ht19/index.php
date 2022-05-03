@@ -37,16 +37,16 @@ $vitali->city='LW';
 
 $users=[$alex,$vlada,$vitali];
 //spl_autoload_register(function ($v){ include $v.'.php';});
-//var_dump($users);
+//var_dump($users.txt);
 echo $alex->city;
 
-//foreach ($users as $v){
+//foreach ($users.txt as $v){
 //    if ($v->age > $adult) {
 //        $users_new[]=$v;
 //
 //    }
 //}
 $total= new \Romanenko\Control;
-//$total-> Filter ($users);
+//$total-> Filter ($users.txt);
 
 var_dump($total-> Filter ($users));
