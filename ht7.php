@@ -26,7 +26,7 @@ John;Braun;39;Man
 echo 'hello, it is hometask #7' . "\n";
 
 file_put_contents('people_list.txt', 'FirstName;LastName;Age;Sex;
-Alex;Petrov;ht18;Man
+Alex;Petrov;ht18#1;Man
 Ivan;Petrov;14;Man
 Petr;Petrovich;20;Man
 Olga;Petrovna;24;Women

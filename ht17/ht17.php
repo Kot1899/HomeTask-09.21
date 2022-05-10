@@ -12,7 +12,7 @@ $x= "\n";
 
 class User{
     protected $name;
-    protected $age;
+    public $age;
     public $car = 'maybe';
 
     public function __construct($name, $age, $car)
