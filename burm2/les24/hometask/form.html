@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form in KOT</title>
+</head>
+<body>
+<style>
+    div{
+        width: 300px;
+        height: 410px;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right:  30px;
+        border: 4px double  #006600;
+        background-color: #61F2A9;
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    span{
+        align-items: center;
+        font-size: 20px;
+        color: #222222;
+        font-weight: bold;
+    }
+    .submit{
+        /*margin:40%*/
+        position: relative;
+        top: 8px; left: 40%;
+    }
+    .btn {
+        font-family: "time new roman";
+        font-size: 20px ;
+        display: inline-block; /* Строчно-блочный элемент */
+        background: #61F2A9; /* Серый цвет фона */
+        color: black; /* Белый цвет текста */
+        padding: 1rem 1.5rem; /* Поля вокруг текста */
+        text-decoration: none; /* Убираем подчёркивание */
+        border-radius: 3px; /* Скругляем уголки */
+        border: 1px solid  #FF8F03;
+        position: absolute;
+        top: 5px; left: 760px;
+    }
+    .passport{
+        font-size: 26px ;
+        color:#F05924;
+        position: relative;
+        left: 35%;
+    }
+    strong{
+        font-size: 36px ;
+        color:#F05924;
+        position: absolute;
+        left: 30%;
+        /*transform: translate(-50%);*/
+    }
+
+</style>
+<form action="index.php" method="post">
+
+    <div>
+        <strong style="text-align: center"> About you </strong> <br/><br/>
+        <span> Name:<br/>
+        <input type="text" size="20" name="name" placeholder="Alex" /> </span> <br/>
+        <span> Age: <br/>
+        <input type="number" size="20"  name="age" placeholder="18"  /> </span> <br/>
+        <span> Sex: <br/>
+        <input type="text" size="20"  name="sex" placeholder="male/female"  /> </span> <br/><br/>
+
+        <span class="passport">Passport: </span> <br/>
+        <span> Number: <br/>
+        <input type="number" size="20"  name="number" placeholder="XX-XX-XX"  /> </span> <br/>
+        <span> Serial: <br/>
+        <input type="text" size="20"  name="serial" placeholder="XX"  /> </span> <br/>
+        <span> Date of issure: <br/>
+        <input type="text" size="20"  name="date" placeholder="2000.12.20" /> </span> <br/>
+
+        <span class="submit"> <button type="submit"> DONE) </button> </span>
+
+        <a href="logout.php" class="btn">Logout</a>
+
+    </div>
+</form>
+</body>
+</html>
+

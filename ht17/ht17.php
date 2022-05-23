@@ -120,9 +120,9 @@ $user1 = new User();
     $user1-> setName('Vitali');
     $user1->setAge(27);
 
-echo 'test echo: ' . $user1->getName() .' '. $user1->getAge(). "\n";
+echo 'les19 - autoload echo: ' . $user1->getName() .' '. $user1->getAge(). "\n";
 $user1-> setName('Alex');
-echo 'test echo: ' . $user1->getName() .' '. $user1->getAge();
+echo 'les19 - autoload echo: ' . $user1->getName() .' '. $user1->getAge();
 */
 
 //second method with CONSTRUCT

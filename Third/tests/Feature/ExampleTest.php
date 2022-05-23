@@ -8,7 +8,7 @@ use Tests\TestCase;
 class ExampleTest extends TestCase
 {
     /**
-     * A basic test example.
+     * A basic les19 - autoload example.
      *
      * @return void
      */

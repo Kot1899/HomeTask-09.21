@@ -1,7 +1,7 @@
 <?php
 abstract class User{
     public $name;
-    protected $sex;
+    public $sex;
     public function __construct($v){
         return $this->name=$v;
     }
@@ -14,7 +14,7 @@ class Man extends User{
     }
 }
 class Woman extends User{
-    protected $sex='female';
+    public $sex='female';
     public function setSize(){
         //some mathematics
     }

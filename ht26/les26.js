@@ -25,10 +25,10 @@ let d= new Date();
 */
 
 //движение картинки
-// let test= document.getElementById('test_motion');
+// let les19 - autoload= document.getElementById('test_motion');
 // let i=0;
 // setInterval(function (){
-//     test.style.left = (i++) + 'px';
+//     les19 - autoload.style.left = (i++) + 'px';
 // },100)
 
 
@@ -47,7 +47,7 @@ let d= new Date();
 
 
 // function moveObject(motion){
-//     let test= document.getElementById('test_motion');
+//     let les19 - autoload= document.getElementById('test_motion');
 //
 // }
 
@@ -84,5 +84,5 @@ function moveObj(e){
 
 
 // for (let i = 0; i < 200; i++){
-//     test.style.left = i;
+//     les19 - autoload.style.left = i;
 // }

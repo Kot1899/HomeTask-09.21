@@ -1,7 +1,6 @@
 <?php
-//namespace myRoma;
-namespace mynamespace;
-class myControl
+namespace romanenko;
+class control
 {
     public function myFilter($students)
     {

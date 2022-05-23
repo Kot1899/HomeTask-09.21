@@ -19,6 +19,7 @@ spl_autoload_register(function ($v){ include $v.'.php';});
 */
 spl_autoload_register(function ($v){ include $v. '.php';});
 //include 'Romanenko\User.php';
+//include 'Romanenko\control.php';
 $alex= new \Romanenko\User;
 $alex->name='Alex';
 $alex->age=rand(32,39);
@@ -47,6 +48,6 @@ echo $alex->city;
 //    }
 //}
 $total= new \Romanenko\Control;
-//$total-> Filter ($users.txt);
+$total-> Filter ($users);
 
 var_dump($total-> Filter ($users));

@@ -1,6 +1,6 @@
 <?php
 // №1 connection to DB
-$connection = new PDO('mysql:host=localhost; dbname=test', 'root', "123123");
+$connection = new PDO('mysql:host=localhost; dbname=les19 - autoload', 'root', "123123");
 
 $email_d= $_POST['Email'];
 $login_d= $_POST['Login'];

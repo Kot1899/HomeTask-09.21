@@ -14,5 +14,7 @@ les17 - oop/ magic method
 les18 - oop/ abstract, interface, namespace
 les19 - oop/anon. function, autoload.
 les20 - sql/ meets and connection
+les21 - sql/select,insert,update,delete.
+les22 - sql/
 
 

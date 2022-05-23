@@ -15,28 +15,28 @@
 этого тебе подойдет функция — spl_autoload_register.
 */
 
-spl_autoload_register(function ($v){ include $v. '.php';});
-//include 'mynamespace\student.php';
-//include 'mynamespace\control.php';
+spl_autoload_register(function ($v){ include 'my\\'.basename($v). '.php';});
+//include 'my\student.php';
+//include 'my\control.php';
 
-//$alex= new \myRoma\students;
-$alex= new \mynamespace\students;
+//use my\student;
+//use my\control;
+$alex= new \romanenko\student;
 $alex->name='Alex';
 $alex->age=rand(10,40);
 
-//$oll= new \myRoma\students;
-$oll= new \mynamespace\students;
+$oll= new \romanenko\student;
 $oll->name='oll';
 $oll->age=rand(10,40);
 $oll->sex='female';
 
-//$kile= new  \myRoma\students;
-$kile= new  \mynamespace\students;
+$kile= new \romanenko\student;
 $kile->name='kile';
 $kile->age=rand(10,40);
 
 $students=[$alex,$oll,$kile];
 
-$total= new \myRoma\myControl;
-
+$total= new \romanenko\control;
 var_dump($total->myFilter($students));
+
+echo $kile->name;

@@ -43,7 +43,7 @@ foreach ($users as $v){
     echo '</tr>';
 
 
-    /*test for github
+    /*les19 - autoload for github
     */
 }
 echo '</table>';

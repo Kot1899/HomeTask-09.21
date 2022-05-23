@@ -20,13 +20,13 @@ class RouteServiceProvider extends ServiceProvider
     public const HOME = '/home';
 
     /**
-     * The controller namespace for the application.
+     * The controller les19namespace for the application.
      *
-     * When present, controller route declarations will automatically be prefixed with this namespace.
+     * When present, controller route declarations will automatically be prefixed with this les19namespace.
      *
      * @var string|null
      */
-    // protected $namespace = 'App\\Http\\Controllers';
+    // protected $les19namespace = 'App\\Http\\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

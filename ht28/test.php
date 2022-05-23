@@ -1,2 +1,2 @@
 <?php
-echo 'Hello from test a:'. rand(0,100);
+echo 'Hello from les19 - autoload a:'. rand(0,100);

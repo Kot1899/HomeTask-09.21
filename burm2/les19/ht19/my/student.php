@@ -1,11 +1,10 @@
 <?php
-//namespace myRoma;
-namespace mynamespace;
+namespace romanenko;
 trait myName{
     public $name;
 }
 
-class students{
+class student{
     use myName;
     public  $age;
     public  $sex='male';

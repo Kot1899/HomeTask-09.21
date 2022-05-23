@@ -1,4 +1,4 @@
 <?php
 session_start();
 session_destroy();
-header("location:index_foto.html");
+header("location:index.html");
