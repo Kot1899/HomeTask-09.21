@@ -21,7 +21,7 @@ spl_autoload_register(function ($v){ include $v. '.php';});
 //include 'Romanenko\User.php';
 //include 'Romanenko\control.php';
 $alex= new \Romanenko\User;
-$alex->name='Alex';
+$alex->name='Alex1';
 $alex->age=rand(32,39);
 $alex->city='KH';
 
