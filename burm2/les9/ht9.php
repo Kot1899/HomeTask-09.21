@@ -13,7 +13,8 @@ echo '<table border=1>';
 foreach ($students as $v) {
     echo '<tr>';
     echo '<td bgcolor=yellow><strong><center>' . $v[0].'</td></center></strong>';
-    echo '<td bgcolor=yellow><strong><center><font color="#00bfff"> ' .$v[1].'</font></td></center></strong>';
+    echo '<td bgcolor=yellow><strong><center><font color="#00bfff"> '
+        .$v[1].'</font></td></center></strong>';
     }
 echo '</table>';
 $button = 'Touch me pls';

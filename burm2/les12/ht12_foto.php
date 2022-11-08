@@ -10,11 +10,3 @@ if (array_key_exists('attach_file', $_FILES) && $_FILES['attach_file']['error'] 
     echo 'thanks Kot)' . '<br/>'. 'u amazing';
 }
 echo  '<br/>';
-
-/*
-$all_files=glob('*txt');
-foreach ($all_files as $v) {
-    echo '<a href="">'. $v . '</a><br/>';
-}
-C:\PHP hometask
-*/

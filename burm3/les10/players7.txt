@@ -1,0 +1,8 @@
+Name;Number;Pos;Goal
+Sandro;8;Mildl;2
+Calabria;2;def;1
+Fik;23;def;0
+Rafa;5;forvard;17
+Ibra;11;for;10
+Olievie;9;for;9
+DeKeteler;90;midl;4

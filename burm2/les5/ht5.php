@@ -19,7 +19,8 @@ echo 'numbers array elements through function:' . $number . "\n";
 
 //show users.txt list:
 for ($i=0; $i<$size; $i++){
-    echo 'student name - '. $students[$i]['name'] . ', student age - ' . $students[$i]['age'] . '.' .
+    echo 'student name - '. $students[$i]['name'] . ', student age - '
+        . $students[$i]['age'] . '.' .
         'length of name -'. strlen($students[$i]['name']) . "\n";
     }
 

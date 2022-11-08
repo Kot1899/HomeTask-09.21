@@ -23,7 +23,7 @@ function printUser($name, $age, $sex = 'n/a')
     echo 'its without ternarnic: ';
 
     if ('n/a' == $sex) {
-        echo $name . '=' . $age;
+        echo $name . '=' . $age. '@';
     } else{
         echo $name . '=' . $age.', '. $sex;
     }
